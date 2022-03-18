@@ -1,7 +1,10 @@
 var express = require('express');
 var router = express.Router();
+//skills controller
+const skillsCtrl = require('../controllers/skills')
+
 
 /* GET users listing. */
-//all actual paths
+router.get('/', skillsCtrl.index)
 
 module.exports = router;
